@@ -1,7 +1,7 @@
 <h2>API sklepu</h2>
 
-<h2>Auta:</h2>
-
+<h3>Auta:</h3>
+<hr>
 GET "/cars"
 zwraca listę wszystkich aut 
 
@@ -18,8 +18,8 @@ DELETE "cars/id"
 usuwa auto o podanym id
 
 
-<h2>Client:</h2>
-
+<h3>Klienci:</h3>
+<hr>
 GET "/clients"
 zwraca listę wszystkich klientów 
 
