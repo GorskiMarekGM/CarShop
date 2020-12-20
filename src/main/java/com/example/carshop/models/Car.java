@@ -68,4 +68,16 @@ public class Car {
     public void setClient(Client client) {
         this.client = client;
     }
+
+    public boolean analyzeCarByParams(Integer id, String name, float price, boolean is_available, Client client){
+        boolean idNull = null == id;
+        boolean nameNull = null == name;
+
+        if(idNull || nameNull || (price==0))
+        {
+            throw new IllegalArgumentException("Car details are not set properly");
+        }
+
+    return true;
+    }
 }

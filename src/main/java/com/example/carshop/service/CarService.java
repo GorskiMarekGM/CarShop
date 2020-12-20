@@ -25,6 +25,10 @@ public class CarService {
         return CarRepo.findById(id).get();
     }
 
+    public Car find(Integer id) {
+        return CarRepo.findById(id).orElse(null);
+    }
+
     public void delete(Integer id){
         CarRepo.deleteById(id);
     }
